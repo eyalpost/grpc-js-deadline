@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package wix;
+
+service Service {
+    rpc CallSelf (CallSelfRequest) returns (Empty);
+}
+
+message CallSelfRequest {
+    int32 delay = 1;
+}
+
+message Empty {
+}
